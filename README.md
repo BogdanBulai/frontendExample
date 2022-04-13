@@ -16,7 +16,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 5. The solution is fully extendable, both in the number of answer pairs as well as answer number within each pair.
 
-6. A wrong answer compared to another wrong answer within the same pair won't change the color. I assumed there aren't answers 'less wrong' than others.
+6. Choosing a wrong answer over another wrong answer within the same pair won't change the color. I assumed there aren't answers 'less wrong' than others.
 
 7. There are a few small issues with resizing the window (e.g. once an answer pair wraps, it won't de-wrap after enlarging the window).
 
