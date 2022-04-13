@@ -9,10 +9,10 @@ interface TestQuestionInterface {
 }
 
 const TestQuestion = ({ question }: TestQuestionInterface) => {
-    const [topColor, setTopColor] = useState(baseWrongColorTop);
-    const [bottomColor, setBottomColor] = useState(baseWrongColorBottom);
-    const [switchColor, setSwitchColor] = useState(wrongColorSwitch);
-    const [borderColor, setBorderColor] = useState(wrongColorBorder);
+    const [topColor, setTopColor] = useState<string>(baseWrongColorTop);
+    const [bottomColor, setBottomColor] = useState<string>(baseWrongColorBottom);
+    const [switchColor, setSwitchColor] = useState<string>(wrongColorSwitch);
+    const [borderColor, setBorderColor] = useState<string>(wrongColorBorder);
     const [correctAnswers, setCorrectAnswers] = useState<number>(0);
     const [isAnswerWrappedArray, setIsAnswerWrappedArray] = useState<number[]>([]);
     const bottomColorMap = interpolate([baseWrongColorBottom, baseCorrectColorBottom]);
