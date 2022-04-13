@@ -1,0 +1,25 @@
+@mixin breakpoint($value) {
+    @if $value == 'desktop' {
+        @media only screen and (min-width: 1036px) {
+            @content;
+        }
+    }
+    @if $value == 'tablet' {
+        @media only screen and (min-width: 601px) and (max-width: 1035px) {
+            @content;
+        }
+    }
+    @if $value == 'phone' {
+        @media only screen and (max-width: 600px) {
+            @content;
+        }
+    }
+}
+
+@mixin font-size($font-size, $line-height: false) {
+  font-size: $font-size;
+
+  @if $line-height {
+    line-height: $line-height;
+  }
+}
