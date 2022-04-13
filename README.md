@@ -6,7 +6,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 **Assumptions:**
 
-1. I picked the 'most wrong' and 'most correct' color from the design and I interpolated those colors to find colors between them in order to have an interval to choose from when changing the colors. Interpolation happens on a curbed path that goes through the middle of the color wheel. A more appropiate interpolation would have been one that goes through the curbed path on the color wheel edge for more live colors and to avoid gray hues. I couldn't find a solution for this.
+1. I picked the 'most wrong' and 'most correct' color from the design and I interpolated those colors to find colors between them in order to have an interval to choose from when changing the colors. Interpolation happens on a curbed path that goes through the middle of the color wheel. A more appropiate interpolation would have been one that goes through the curbed path on the color wheel edge for more live colors and to avoid gray hues. I couldn't find a solution for this, but it's something that is possible given some research time.
 
 2. I chose not to use any state management library, but in retrospect this was a mistake. I assumed the logic of the application wouldn't be so extensive and a state management library (such as redux) would have helped. I realized this too late and I decided not to refactor the application in order to add it, given the size of it. An extension of it would require a state management library though.
 
